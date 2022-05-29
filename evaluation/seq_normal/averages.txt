@@ -1,0 +1,3 @@
+Squaring normally:
+Avg absolute error: 0.2759314795043978
+Avg relative error: 72.8843255926825

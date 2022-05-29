@@ -25,11 +25,11 @@ def print_data(expected, predicted):
 
 main_dir = os.path.dirname(sys.path[0])
 
-dimension = 3
+dimension = 1
 samples = 1000
 zeros = 1
 #df = pd.read_csv('csv/test/d{}n{}.csv'.format(dimension, samples))
-df = pd.read_csv('csv/test/d{}n{}z{}.csv'.format(dimension, samples, zeros))
+df = pd.read_csv('csv/training/multiplication/multi_10000.csv')
 
 labels = ['a{}'.format(i) for i in range(1, dimension + 1)] + \
          ['b{}'.format(i) for i in range(1, dimension + 1)]
@@ -40,7 +40,7 @@ y = df['distance'].values
 X_test = np.array(X)
 y_test = np.array(y)
 
-model2 = load_model('models/feedforward_distance_in_3D_1000000samples.h5')
+model2 = load_model('models/multiplication/1_model')
 
 pred_labels_te = model2.predict(X_test)
 

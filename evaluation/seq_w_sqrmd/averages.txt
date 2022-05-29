@@ -1,0 +1,3 @@
+Squaring with model:
+Avg absolute error: 0.3989849769530668
+Avg relative error: 138.78691087309167
